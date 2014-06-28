@@ -1,0 +1,9 @@
+{
+  "name": "node-js-file-based-paths",
+  "description": "A sample application using file-based node paths",
+  "author": "Isaac Reid-Guest <isaac.reid.guest@gmail.com>",
+  "dependencies": {
+    "express": "4.x.x"
+  },
+  "engine": "node >= 0.4.1"
+}
