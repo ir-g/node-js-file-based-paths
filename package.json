@@ -3,7 +3,8 @@
   "description": "A sample application using file-based node paths",
   "author": "Isaac Reid-Guest <isaac.reid.guest@gmail.com>",
   "dependencies": {
-    "express": "4.x.x"
+    "express": "4.x.x",
+    "coffee-script":"*"
   },
   "engine": "node >= 0.4.1"
 }
