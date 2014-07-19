@@ -1,4 +1,6 @@
 var express = require('express');
+var cs= require('coffee-script');
+require('coffee-script/register');
 var app = express();
 
 var fs = require('fs');
@@ -12,7 +14,7 @@ process.chdir(__dirname);
 files.forEach(function (filepath) {
   var handlerName = path.basename(filepath, path.extname(filepath));
   var handler = require(path.join(handlerPath, filepath));
-  console.log(handlerName);
+  console.log("New handler: " + handlerName);
   var regEx = new RegExp('^\/' + handlerName + '(\.djs){0,1}(\/.*)*$');
   app.get(regEx, handler);
 
@@ -21,4 +23,7 @@ files.forEach(function (filepath) {
   }
 });
 
-app.listen(3000);
+
+var port = process.env.PORT || 3000;
+console.log("Port: " + port);
+app.listen(process.env.PORT || 3000);

@@ -2,6 +2,10 @@
   "name": "node-js-file-based-paths",
   "description": "A sample application using file-based node paths",
   "author": "Isaac Reid-Guest <isaac.reid.guest@gmail.com>",
+  "repository":  {
+    "type" : "git",
+    "url" : "http://github.com/isaacrg/node-js-file-based-paths.git"
+  },
   "dependencies": {
     "express": "4.x.x",
     "coffee-script":"*"
